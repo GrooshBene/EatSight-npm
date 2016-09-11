@@ -4,6 +4,12 @@
 
 var https = require('https');
 
-exports.pushlog = function () {
-    console.log('asdf');
+function pushlog(content){
+    console.log(content);
 }
+
+function setAppKey(appkey) {
+
+}
+
+exports.pushlog = pushlog;

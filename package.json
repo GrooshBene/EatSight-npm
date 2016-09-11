@@ -1,0 +1,25 @@
+{
+  "name": "Safood-Parse",
+  "version": "0.1.6",
+  "description": "Safood DB Parse Module",
+  "author": { "name": "GrooshBene", "email": "grooshbene@gmail.com" },
+  "contributors": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grooshbene/safood_npm_module"
+  },
+  "bugs": {
+    "url": "http://github.com/grooshbene/safood_npm_module/issues"
+  },
+  "main": "./route/parse.js",
+  "dependencies": {
+    "pkginfo": "0.2.x"
+  },
+  "engines": { "node": ">= 0.4.0" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT"
+  } ],
+  "keywords": ["Safood"]
+}
