@@ -1,6 +1,16 @@
 # EatSight-npm
 Node.js Module for EatSight API
 
+## Installation
+
+> Using NPM
+    
+    npm install SaFood-Parse
+    
+> Using Git
+    
+    git clone https://github.com/GrooshBene/EatSight-npm.git
+
 ##API Document
 ----------------
 
