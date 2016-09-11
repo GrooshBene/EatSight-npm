@@ -51,7 +51,7 @@ function getFoodInfo(appKey, userKey, searchOptions, callback) {
         "method": "GET",
         "hostname": "apis.eatsight.com",
         "port": null,
-        "path": "/foodinfo/1.0/foods?foodType=" + searchOptions.foodType + "&searchField=" + searchOptions.searchField + "&searchValue=" +searchOptions.searchValue+ "&offset=" + searchOptions.offset + "&limit="+ searchOptions.limit+ "&sortField=" + searchOptions.sortField + "&sortType=" + searchOptions.sortType + "&imageType=" + searchOptions.imageType,
+        "path": "/foodinfo/1.0/foods?foodType=" + searchOptions.foodType + "&searchField=" + searchOptions.searchField + "&searchValue=" +searchOptions.searchValue+ "&offset=" + searchOptions.offset + "&limit="+ searchOptions.limit,
         "headers": {
             "ds-applicationkey": appKey,
             "content-type": "application/json",
@@ -115,3 +115,4 @@ function getSpecifiedInfo(appKey, userKey, foodId, callback){
 exports.setAppKey = setAppKey;
 exports.createUserKey = createUserKey;
 exports.getFoodInfo = getFoodInfo;
+exports.getSpecifiedInfo = getSpecifiedInfo;

@@ -1,13 +1,13 @@
 {
-  "name": "Safood-Parse",
-  "version": "0.2.3",
-  "description": "Safood DB Parse Module",
+  "name": "SaFood-Parse",
+  "version": "0.2.6",
+  "description": "SaFood-Parse DB Parse Module",
   "author": { "name": "GrooshBene", "email": "grooshbene@gmail.com" },
   "contributors": [
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/grooshbene/safood_npm_module"
+    "url": "git://github.com/grooshbene"
   },
   "bugs": {
     "url": "http://github.com/grooshbene/safood_npm_module/issues"
