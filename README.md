@@ -22,7 +22,7 @@ Node.js Module for EatSight API
       'DS-AccessToken': 'df3d650b-3747-4552-83e3-ddd863706c1b' }
 
 
-* function getFoodInfo(appKey, userKey, searchOptions, callback)
+* function getFoodInfo(appKey, userKey, searchOptions, callback) : Getting FoodInfo Lists.
 
 > Requiring
     
@@ -41,4 +41,22 @@ Node.js Module for EatSight API
             sortField : 'foodName'
     }
 
+> Result
+
+    Please Refer to EatSight API Doc
+    
+    
+    
+* function getSpecifiedInfo(appKey, userKey, foodId, callback) : Getting Specified Food Info With Food's Id.
+
+> Requiring
+
+    appKey : api's ds-applicationKey
+    userKey : user's ds-accessToken
+    foodId : food's Id
+    callback : function to catch result
+    
+> Result
+
+    Food's Specified Info Json
 
