@@ -78,6 +78,38 @@ function getFoodInfo(appKey, userKey, searchOptions, callback) {
     req.end();
 }
 
+function getSpecifiedInfo(appKey, userKey, foodId, callback){
+    var options = {
+        "method": "GET",
+        "hostname": "apis.eatsight.com",
+        "port": null,
+        "path": "/foodinfo/1.0/foods/"+foodId,
+        "headers": {
+            "ds-applicationkey": appKey,
+            "content-type": "application/json",
+            "ds-accesstoken": userKey,
+            "cache-control": "no-cache",
+            "postman-token": "b651f1b8-f540-d2bd-aa1a-04df18f188a2"
+        }
+    };
+
+    var req = http.request(options, function (res) {
+        var chunks = [];
+
+        res.on("data", function (chunk) {
+            chunks.push(chunk);
+        });
+
+        res.on("end", function () {
+            var body = Buffer.concat(chunks);
+            var request = body.toString();
+            callback(JSON.parse(request));
+        });
+    });
+
+    req.end();
+}
+
 
 
 exports.setAppKey = setAppKey;
