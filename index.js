@@ -6,4 +6,4 @@ parse.createUserKey('c3a5142c-ad30-4589-b67f-9eac3cdfab6c', '20', 'M', '11000000
 
 parse.setAppKey("asdf", function (result) {
     console.log(result);
-})
+});
